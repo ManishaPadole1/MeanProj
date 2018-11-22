@@ -1,0 +1,9 @@
+.myclass{
+    box-sizing: border-box;
+    height: 300px;
+    width: 300px;
+    color: white;
+    padding: 30px;
+    font-size: 20px;
+    background-color: #ef3b7d;
+}
