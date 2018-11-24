@@ -1,7 +1,6 @@
 var express= require('express');
 var router = express.Router();
 var mongoose = require("mongoose");
-
 /** Working code for Mongoose Db for mlab but not working for localhost */
 
 var schema = mongoose.Schema;

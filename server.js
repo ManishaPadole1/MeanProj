@@ -3,7 +3,7 @@ var bodyParser = require('body-parser');
 var path = require('path');
 var api = require('./server/routes/api');
 var app = express();
-
+var port = process.env.PORT || 8080;
 
 
 
@@ -17,6 +17,6 @@ app.use('/api', api);
 app.get('*',(req,res)=> {
   res.sendFile(path.join(__dirname,'dist/meanapp2/index.html'));
 }); 
-app.listen(3000, function(){
-  console.log("listen to port 3000");
+app.listen(port, function(){
+  console.log("listen to port 8080");
 });
